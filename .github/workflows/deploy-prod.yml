@@ -7,6 +7,7 @@ jobs:
   deploy-app:
     runs-on: ubuntu-latest  
     steps:
+      - name: check out the code
       - name: check out the code to build server
         uses: actions/checkout@v4
       - name: copy file to server
